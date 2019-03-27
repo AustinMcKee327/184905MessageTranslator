@@ -1,0 +1,5 @@
+﻿Start by adding a Button, Label, TextBox
+Add TextWrapping 'Wrap' and AcceptsReturn 'True'
+Inside the Button code in the .cs file, add a string declaring the vairable, making it equal to the TextBox.Text
+Now, make a for loop, with 'i' being equal to zero, if i is less than 12, i++
+inside the for statement, add a console.writeline
