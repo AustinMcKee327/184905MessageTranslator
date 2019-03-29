@@ -32,13 +32,7 @@ namespace _184905MessageTranslator
         private void TranslateButton_Click(object sender, RoutedEventArgs e)
         {
             string TextInput = TextBoxShortForm.Text;
-            int End = 0;
-            while (End == 0)
-            {
-                for (int i = 0; i < 12; i++)
-                {
-                    Console.WriteLine("value of i: (0)", i);
-                }
+           
                 TextInput = TextBoxShortForm.Text.ToUpper();
 
                 TextInput = TextInput.Replace(":-)", "I'm Happy" + Environment.NewLine);
