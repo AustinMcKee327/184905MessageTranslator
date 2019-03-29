@@ -1,5 +1,10 @@
-﻿Start by adding a Button, Label, TextBox
+First Edit/Piece: March 24th, 2019. Second Edit/Piece: March 28th, 2019﻿
+Start by adding a Button, Label, TextBox
 Add TextWrapping 'Wrap' and AcceptsReturn 'True'
 Inside the Button code in the .cs file, add a string declaring the vairable, making it equal to the TextBox.Text
-Now, make a for loop, with 'i' being equal to zero, if i is less than 12, i++
-inside the for statement, add a console.writeline
+Add a line that uses declares the variable be equal to the textbox .ToUpper. This will make it so all letters are input to the system as capital letters.
+Now, Type a line that uses the variable and uses .Replace to replace the short form with the long translation. Make sure that CUZ is before CU, and that TTYL is before TY.
+Type multiple of that line, replacing each short form and translation in the program. Make sure any short forms that use similar letter sets, like CU and CUZ are programed so that the longer version is looked for first. That way, it will translate the longer one so it won't be looked for when translating the shorter one.
+In order to make sure TTYL closes the program, make an if statement using the textbox, .ToUpper, and follow it up with .Contains("")
+Inputing TTYL into that bracket will make it so if the TTYL is inside the Textbox, it will do what you want it to do inside the if statement.
+In this case, we want it to close the program. Use Environment.Exit(). This will exit the Window that you tell it to inside the brakets. Since there is only one window, there is no need to input anything in the brackets.
