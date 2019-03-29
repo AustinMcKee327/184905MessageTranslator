@@ -1,4 +1,8 @@
-﻿using System;
+/* Austin McKee
+*March 29, 2019
+*This Program takes the user's input of certain shortforms or slang that teens text with and outputs the correct slang translation. If TTYL is entered, the program ends.
+*/
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -41,7 +45,6 @@ namespace _184905MessageTranslator
                 TextInput = TextInput.Replace(":-(", "I'm Sad" + Environment.NewLine);
                 TextInput = TextInput.Replace(";-)", "Wink" + Environment.NewLine);
                 TextInput = TextInput.Replace(":-P", "Stick Out My Tounge" + Environment.NewLine);
-                TextInput = TextInput.Replace("CU", "See You" + Environment.NewLine);
                 TextInput = TextInput.Replace("~.~", "I'm Sleepy" + Environment.NewLine);
                 TextInput = TextInput.Replace("TA", "Totally Awesome" + Environment.NewLine);
                 TextInput = TextInput.Replace("CCC", "Canadian Computing Competition" + Environment.NewLine);
@@ -49,6 +52,7 @@ namespace _184905MessageTranslator
                 TextInput = TextInput.Replace("TTYL", "Talk To You Later" +Environment.NewLine);
                 TextInput = TextInput.Replace("TY", "Thank You" + Environment.NewLine);
                 TextInput = TextInput.Replace("YW", "Your Welcome" + Environment.NewLine);
+                TextInput = TextInput.Replace("CU", "See You" + Environment.NewLine);
             }
                OutputLabel.Content = " " + TextInput;
             if (TextBoxShortForm.Text.ToUpper().Contains("TTYL"))
