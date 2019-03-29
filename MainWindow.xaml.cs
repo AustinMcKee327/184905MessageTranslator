@@ -50,7 +50,11 @@ namespace _184905MessageTranslator
                 TextInput = TextInput.Replace("TY", "Thank You" + Environment.NewLine);
                 TextInput = TextInput.Replace("YW", "Your Welcome" + Environment.NewLine);
             }
-                                          
+               OutputLabel.Content = " " + TextInput;
+            if (TextBoxShortForm.Text.ToUpper().Contains("TTYL"))
+            {
+                Environment.Exit(0);
+            }                                                 
            
         }
     }
